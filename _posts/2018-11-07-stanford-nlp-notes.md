@@ -1,13 +1,9 @@
 ---
-layout:     post
 title:      stanford nlp notes
-subtitle:   winter 2017
-date:       2018-11-07
+keys:       2018-11-08
 author:     paradox
-header-img: img/stanford.jpg
-catalog: true
-mathjax: true
-tags: 
+mathjax: ture
+tags: notes, nlp
 ---
 
 ## lecture2: word vector representations
