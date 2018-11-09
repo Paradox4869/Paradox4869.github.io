@@ -1,9 +1,11 @@
 ---
 title:      stanford nlp notes
-keys:       2018-11-08
+key:       2018-11-08
 author:     paradox
 mathjax: ture
-tags: notes, nlp
+tags: 
+    - note
+    - NLP
 ---
 
 ## lecture2: word vector representations
@@ -28,7 +30,7 @@ So the formula(2) is a transformation form of formula(1), and it make formula(1)
 
 loss function = cost function = objective function.
 
-for $p(w_{t+j} |w_{t})$ the simplest first formulation is
+the simplest first formulation is
 
 $$
 {\rm p}(o|c) = \frac{\exp(u_o^{\rm T}v_c)}{\sum\limits _{w = 1} ^{\rm v} \exp(u_w^{\rm T} v_c)} \tag{3}
