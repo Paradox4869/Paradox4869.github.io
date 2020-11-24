@@ -1,10 +1,10 @@
 ---
-title:     stanford nlp course note
+title:     Stanford NLP Course Note
 key:       2018-11-07
-author:     paradox
-mathjax: true
+author:    paradox
+mathjax:   true
 tags: 
-    - note
+    - Note
     - NLP
 ---
 

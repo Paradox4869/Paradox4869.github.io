@@ -4,6 +4,8 @@ key:       2018-07-10
 author:    paradox
 mathjax:   true
 tags:
+    - Python
+    - Teaching
 ---
 
 # Project 2

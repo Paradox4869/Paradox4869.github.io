@@ -4,6 +4,8 @@ date:       2018-07-26
 author:     paradox
 mathjax:    true
 tags:	
+    - Python
+    - Teaching
 ---
 
 # Course Arrangement
