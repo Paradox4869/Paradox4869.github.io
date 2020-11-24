@@ -1,10 +1,8 @@
 ---
-layout:     post
 title:      Course Arrangement
 date:       2018-07-26
 author:     paradox
-catalog: true
-mathjax: true
+mathjax:    true
 tags:	
 ---
 
