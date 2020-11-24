@@ -1,7 +1,7 @@
 ---
 title:     Python Course for H.M.H
 key:       2018-07-10
-author:    paradox
+author:    villanelle
 mathjax:   true
 tags:
     - Python
@@ -28,15 +28,13 @@ a = 3 # 对a这个变量进行赋值
 
 ```python
 '''
-villanelle is pretty good.
 how are you?
-why not?
+fine, thank you and you?
 '''
 
 """
-villanelle is pretty good.
 how are you?
-why not?
+fine, thank you and you?
 """
 ```
 
@@ -47,10 +45,10 @@ why not?
 python对行和缩进有严格的要求，因为它不像其他语言一样，有`{}`这样的符号表示一段程序块，所以在python需要用缩进来表示代码与代码之间的层级关系。每个缩进需要用四个空格来表示，也可以用一个`tab`键来表示。例如
 
 ```python
-if jinze is handsome:
+if A is right:
     print("yes")
-    if huminghui is beautiful:
-        if jinze is not want_to_die:
+    if B is right:
+        if C is not right:
             print("yes")
         else:
             print("no")
@@ -65,14 +63,14 @@ if jinze is handsome:
 
 整改前：
 ```python
-if villanelle is not handsome and hmh is not beautiful or villanelle is handsome and hmh is not beautiful or villanelle is not handsome and hmh is beautiful or villanelle is handsome and hmh is beautiful:
+if A is not handsome and B is not beautiful or A is handsome and B is not beautiful or A is not handsome and B is beautiful or A is handsome and B is beautiful:
 ```
 多行整改后：
 ```python
-if villanelle is not handsome and hmh is not beautiful 
-    or villanelle is handsome and hmh is not beautiful 
-    or villanelle is not handsome and hmh is beautiful 
-    or villanelle is handsome and hmh is beautiful:
+if A is not handsome and B is not beautiful 
+    or A is handsome and B is not beautiful 
+    or A is not handsome and B is beautiful 
+    or A is handsome and B is beautiful:
 ```
 整改前：
 ```python
@@ -98,11 +96,11 @@ ffz = "huminghui"
 ## 标识符
 
 标识符有字母、数字、下划线组成，但是开头不能是数字，可以是下划线、字母，但是以下划线开头的表示符都有特殊的意义。
-标识符对大小写敏感，例如`villanelle`和`villanelle`是不同的标识符。
+标识符对大小写敏感，例如`villanelle`和`Villanelle`是不同的标识符。
 
 ## 常量
 
-例如自然底数$e$，圆周率$π$。
+例如自然底数$\exp$，圆周率$\pi$。
 
 ## 变量
 
@@ -160,8 +158,8 @@ a = b = c = 1 # 以后a,b,c都将表示1
 
   ```python
   >>> hmh = "abc def ghi jkl"
-  >>> hmh_list = hmh.split() # 默认按空格分隔
-  >>> print(hmh_list)
+  >>> list1 = hmh.split() # 默认按空格分隔
+  >>> print(hmh_list1)
   ```
 
   ```python
@@ -173,8 +171,8 @@ a = b = c = 1 # 以后a,b,c都将表示1
   ```python
   >>> hmh = "hmh"
   >>> villanelle = "villanelle"
-  >>> friends = hmh + " and " + villanelle
-  >>> print(friends)
+  >>> names = hmh + " and " + villanelle
+  >>> print(names)
   ```
 
   ```
@@ -188,36 +186,36 @@ a = b = c = 1 # 以后a,b,c都将表示1
 列表是一种数据结构，就像表格的某一列，我们告诉别人某个数据在表格的这一列的那个位置，通常都会告诉他，在这一列的第几行。列表也是一个道理。在python中列表的每一个位置的数据类型可以是任意数据类型，可以是整型，浮点型，字符串甚至是列表。我们看下面一个例子：
 
 ```python
-hmh_list = ['villanelle', 1, 1.2222, ['hmh', 2]]
+list1 = ['villanelle', 1, 1.2222, ['hmh', 2]]
 ```
 
 怎么访问列表中的数据呢？就像表格一样我们告诉程序我们访问的数据在那个位置：
 
 ```python
->>> hmh_list[0]
+>>> list1[0]
 villanelle
->>> hmh_list[1]
+>>> list1[1]
 1
 ```
 
 记住，在任何编程语言中，索引的第一个数字都是$0$。
 
-你会发现`hmh_list[2]`同样是一个列表啊，要怎么访问这个列表中的元素呢？看下面的操作：
+你会发现`list1[2]`同样是一个列表啊，要怎么访问这个列表中的元素呢？看下面的操作：
 
 ```python
->>> hmh_list[2]
+>>> list1[2]
 ['hmh', 2]
->>> hmh_list[2][0]
+>>> list1[2][0]
 hmh
->>> hmh_list[2][1]
+>>> list1[2][1]
 2
 ```
 
-那我们怎么修改列表中的元素呢，比如我要把`hmh_list[0]`变成`jinze`。我们执行以下操作：
+那我们怎么修改列表中的元素呢，比如我要把`list1[0]`变成`jinze`。我们执行以下操作：
 
 ```python
->>> hmh_list[0] = 'jinze'
->>> hmh_list[0]
+>>> list1[0] = 'jinze'
+>>> list1[0]
 jinze
 ```
 
@@ -228,7 +226,7 @@ jinze
 元组的表示形式如下：
 
 ```python
-hmh_tuple = ('villanelle', 1, 2, 2.33333, ['hmh', 1111], ('ppppp', 12312), 2222)
+tuple1 = ('villanelle', 1, 2, 2.33333, ['hmh', 1111], ('ppppp', 12312), 2222)
 ```
 
 ### 字典
@@ -236,21 +234,21 @@ hmh_tuple = ('villanelle', 1, 2, 2.33333, ['hmh', 1111], ('ppppp', 12312), 2222)
 我们想象一下，平时我们查字典的时候，是不是每个单词下面都有自己对应的解释？在程序中我们称前面的单词为：key，称其中的解释为：value。我们来看一个例子：
 
 ```python
-hmh_dic = {'jinze' : 'villanelle', 'huminghui' : 'hmh'}
+dict1 = {'jinze' : 'villanelle', 'huminghui' : 'hmh'}
 ```
 
 再比如：
 
 ```python
-phone_book = {'jinze' : 156****9980, 'hmh' : 158*********}
+phone_book = {'jinze' : 156****9980, 'hmh' : 233*********}
 ```
 
 怎么访问呢？
 
 ```python
->>> hmh_dic['jinze']
+>>> dict1['jinze']
 villanelle
->>> hmh_dic['huminghui']
+>>> dict1['huminghui']
 hmh
 ```
 
@@ -382,18 +380,18 @@ print(in)
 
 关于输出我们只要调用一下`print()`方法就可以了，参入的参数就是我们要输出的内容。
 
-那我们要怎么格式化输出我们的东西的呢？比如我们先输入一个数字3并保存在n这个变量中，我们要输出的内容是：hmh比villanelle大n个月。我们可以用下面的输出方式:
+那我们要怎么格式化输出我们的东西的呢？比如我们先输入一个数字3并保存在n这个变量中，我们要输出的内容是：hmh比villanelle小n天。我们可以用下面的输出方式:
 
 ```python
 n = int(input())
-print("hmh比villanelle大%d个月" % n)
-print("hmh比villanelle大" + str(n) + "个月")
+print("hmh比villanelle小%d天" % n)
+print("hmh比villanelle小" + str(n) + "天")
 ```
 
 这里有三个小问题留给你：
 
 - 为什么我要使用`int(input())`而不是`input()`？
-- `%d`是什么意思？为什么不会输出"hmh比villanelle大%d个月"，而是输出了"hmh比villanelle大3个月"？
+- `%d`是什么意思？为什么不会输出"hmh比villanelle小%d天"，而是输出了"hmh比villanelle小15天"？
 - 为什么第二种输出方式`n`要用`str(n)`的形式？
 
 请通过微信或者微信语音聊天的方式告诉我你的答案或者疑问。
@@ -430,7 +428,7 @@ if a == 10:
 elif b == 10:
     print("b = %d" %b)
 else:
-    print("lalala")
+    print("others")
 ```
 
 执行后的结果应该是：
@@ -555,7 +553,6 @@ villanelle
 ```python
 print("hmh", end="")
 print("villanelle", end="")
-print("dxxx")
 ```
 
 输出为：
@@ -655,7 +652,7 @@ hmh_list = ["A", "B", 111, 222, 1.11, "hmh", [1111, 2222], (1,2)]
 我们现在有一个空的列表：
 
 ```python
-hmh_list = []
+list1 = []
 ```
 
 ### 加入元素
@@ -665,8 +662,8 @@ hmh_list = []
 ```python
 for i in range(0, 11):
     if i % 2 == 0:
-        hmh_list.append(i)
-print(hmh_list)
+        list1.append(i)
+print(list1)
 ```
 
 ```python
@@ -678,8 +675,8 @@ print(hmh_list)
 我们想把第二个偶数换成3：
 
 ```python
-hmh_list[1] = 3
-print(hmh_list)
+list1[1] = 3
+print(list1)
 ```
 
 ```python
@@ -691,8 +688,8 @@ print(hmh_list)
 我们把3这个不是偶数的数删去
 
 ```python
-del(hmh_list[2])
-print(hmh_list)
+del(list1[2])
+print(list1)
 ```
 
 ```python
@@ -704,14 +701,14 @@ print(hmh_list)
 我们现在有一个纯数字的列表：
 
 ```python
-hmh_list = [2, 3, 1, 4, 24, 5, 56]
+list1 = [2, 3, 1, 4, 24, 5, 56]
 ```
 
 然后我们对其升序排序：
 
 ```python
-hmh_list.sort()
-pritn(hmh_list)
+list1.sort()
+pritn(list1)
 ```
 
 就可以得到：
@@ -725,8 +722,8 @@ pritn(hmh_list)
 如果我们这样：
 
 ```python
-hmh_list.sort(reverse=True)
-print(hmh_list)
+list1.sort(reverse=True)
+print(list1)
 ```
 
 就会得到：
@@ -1108,7 +1105,7 @@ plt.show()
 
 就可以得到：
 
-![1532692392570](https://github.com/villanelletown/villanelletown.github.io/blob/master/img/1532692392570.png?raw=true)
+![1532692392570](https://github.com/paradoxtown/old_blog/blob/master/img/1532692392570.png?raw=true)
 
 `from matplotlib import pyplot as plt`的意思就是从`matplotlib`这个模块中调用`pyplot`并将其简称为`plt`。怎么样看到这段短短的代码画出了四幅图是不是开始觉得python酷炫了起来。
 
