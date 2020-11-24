@@ -1,5 +1,5 @@
 ---
-title:     Python Course for H.M.H
+title:     Python Course
 key:       2018-07-10
 author:    villanelle
 mathjax:   true
