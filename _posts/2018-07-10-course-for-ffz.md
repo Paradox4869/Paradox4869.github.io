@@ -8,9 +8,6 @@ tags:
 
 # Project 2
 
-$villanelle$
-$2018-7-10$
-
 ## 保留字符
 
 保留字符就是python中不能被当作变量的字符，因为这些字符在python中已经被赋予了特殊的意义，例如：`and`是和的意思，`def`是定义函数的意思。
@@ -93,7 +90,7 @@ python中可以使用单引号`'`，双引号`"`，三引号`'''`或者`"""`，�
 
 ```python
 paradox = "jinze"
-dox = "zhouyuxiang"
+ffz = "huminghui"
 ```
 
 ## 标识符
