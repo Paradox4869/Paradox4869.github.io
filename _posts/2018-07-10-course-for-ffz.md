@@ -1,14 +1,15 @@
 ---
-title:     python course for dox
+title:     Python Course for H.M.H
 key:       2018-07-10
-author:     paradox
-mathjax: true
+author:    paradox
+mathjax:   true
 tags:
 ---
 
 # Project 2
 
-$paradox\ 2018-7-10$
+$villanelle$
+$2018-7-10$
 
 ## 保留字符
 
