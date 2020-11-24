@@ -4,7 +4,7 @@ key:       2018-07-12
 author:     paradox
 mathjax: true
 tags: 
-    - note
+    - Note
     - NLP
 ---
 
@@ -56,7 +56,7 @@ $word2vec$模型的原始输入是$one-hot​$数据。
 
 卷积核的系数是由随机化初值，然后根据误差函数通过反向传播梯度下降进行迭代优化的，这是一个调参的过程。卷积核通过优化求出才能实现特征提取的作用，$GCN$的理论很大一部分工作就是**引入可优化的卷机参数。**
 
-![preview](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/note1.jpg?raw=true) 
+![preview](https://github.com/paradoxtown/old_blog/blob/master/img/note1.jpg?raw=true) 
 
 $CNN$是$Computer\ Vision$中要的模型，它可以有效的提取空间特征。但是有一点值得注意的就是他提取的数据类型往往是**排列整齐的像素矩阵**，也就是很多论文中提到的$Euclidean\ Structure$。
 
@@ -72,7 +72,7 @@ $spectral\ domain\ theory$简单的概括就是借助**图的拉普拉斯矩阵�
 
 对于图$G = (V, E)$， 其中$Laplacian$矩阵的定义为$L = D - A$，其中$L$是$Laplacian$矩阵，$D$是顶点的度矩阵（对角矩阵），对角线上的元素依次为各个顶点的度，$A$是图的邻接矩阵。
 
-![preview](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/note2.jpg?raw=true) 
+![preview](https://github.com/paradoxtown/old_blog/blob/master/img/note2.jpg?raw=true) 
 
 常用的拉普拉斯矩阵实际上有三种：
 
@@ -167,13 +167,13 @@ $k$近邻算法。
 
 我们之前把前面运算出来的$output$存到$memory$中以期达到记忆的能力，而现在比较流行的$memory$是$long\ short-term\ memory$（比较长的短期记忆）。
 
-![1537284081307](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/simple_lstm_cell.png?raw=true)
+![1537284081307](https://github.com/paradoxtown/old_blog/blob/master/img/simple_lstm_cell.png?raw=true)
 
 $LSTM$总共有$3$个$gate$，公式$input$，$forget$和$output$，所以总共有四个$input$，一个$output$。
 
 我们要做$LSTM$的模型，只需要将原来的$neuron$替换成$LSTM\ cell$。 
 
-![1537285420474](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/complex_lstm_cell.png?raw=true)
+![1537285420474](https://github.com/paradoxtown/old_blog/blob/master/img/complex_lstm_cell.png?raw=true)
 
 比较复杂版本的$LSTM$。
 
@@ -246,7 +246,7 @@ p(x) = \prod \limits ^T _{t = 1} p(x_t|x_{t-1}, \dots, x_1) \tag{3}
 $$
 以概率的视角来看，这个新的模型相当于是学习一个从一个可变长度序列到另一个可变长度序列的条件分布：$p(y_1, \dots, y_{T'}|x_1, \dots, x_T)$.
 
-![1540227537670](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/seq2seq.png?raw=true)
+![1540227537670](https://github.com/paradoxtown/old_blog/blob/master/img/seq2seq.png?raw=true)
 
 $Encoder$每次读取一个`symbol`，$RNN$中间的隐藏状态根据$(1)$来改变状态。当读到`EOS`的时候，隐藏状态就是整个序列的摘要$c$。
 

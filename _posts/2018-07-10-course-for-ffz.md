@@ -28,13 +28,13 @@ a = 3 # 对a这个变量进行赋值
 
 ```python
 '''
-paradox is pretty good.
+villanelle is pretty good.
 how are you?
 why not?
 '''
 
 """
-paradox is pretty good.
+villanelle is pretty good.
 how are you?
 why not?
 """
@@ -49,7 +49,7 @@ python对行和缩进有严格的要求，因为它不像其他语言一样，�
 ```python
 if jinze is handsome:
     print("yes")
-    if zhouyuxiang is beautiful:
+    if huminghui is beautiful:
         if jinze is not want_to_die:
             print("yes")
         else:
@@ -65,14 +65,14 @@ if jinze is handsome:
 
 整改前：
 ```python
-if paradox is not handsome and dox is not beautiful or paradox is handsome and dox is not beautiful or paradox is not handsome and dox is beautiful or paradox is handsome and dox is beautiful:
+if villanelle is not handsome and hmh is not beautiful or villanelle is handsome and hmh is not beautiful or villanelle is not handsome and hmh is beautiful or villanelle is handsome and hmh is beautiful:
 ```
 多行整改后：
 ```python
-if paradox is not handsome and dox is not beautiful 
-    or paradox is handsome and dox is not beautiful 
-    or paradox is not handsome and dox is beautiful 
-    or paradox is handsome and dox is beautiful:
+if villanelle is not handsome and hmh is not beautiful 
+    or villanelle is handsome and hmh is not beautiful 
+    or villanelle is not handsome and hmh is beautiful 
+    or villanelle is handsome and hmh is beautiful:
 ```
 整改前：
 ```python
@@ -91,14 +91,14 @@ total = item_one + \
 python中可以使用单引号`'`，双引号`"`，三引号`'''`或者`"""`，来表示字符串，其中三引号可以由多行组成。
 
 ```python
-paradox = "jinze"
+villanelle = "jinze"
 ffz = "huminghui"
 ```
 
 ## 标识符
 
 标识符有字母、数字、下划线组成，但是开头不能是数字，可以是下划线、字母，但是以下划线开头的表示符都有特殊的意义。
-标识符对大小写敏感，例如`paradox`和`Paradox`是不同的标识符。
+标识符对大小写敏感，例如`villanelle`和`villanelle`是不同的标识符。
 
 ## 常量
 
@@ -112,10 +112,10 @@ ffz = "huminghui"
 
 ```python
 a = 100 # 这句话被执行之后，以后a就代表100了
-name = "dox" # 以后name这个变量名就表示dox了
-dox = "zhouyuxiang" # 以后dox这个变量名就表示zhouyuxiang了
+name = "hmh" # 以后name这个变量名就表示hmh了
+hmh = "huminghui" # 以后hmh这个变量名就表示huminghui了
 ```
-那么上面的`dox`和`name`有什么区别呢？
+那么上面的`hmh`和`name`有什么区别呢？
 #### 多变量赋值
 
 ```python
@@ -140,7 +140,7 @@ a = b = c = 1 # 以后a,b,c都将表示1
 '我可以被双引号、单引号包裹，之前讲过的哦'
 ```
 
-现在你知道之前的`dox`和`name`有什么区别了么？虽然`name`表示的是`"dox"`看起来一样，但其实就是`"dox"`和`dox`之间的区别。一个是常量，一个是变量，`"dox"`不能被赋值，而`dox`可以被赋值。
+现在你知道之前的`hmh`和`name`有什么区别了么？虽然`name`表示的是`"hmh"`看起来一样，但其实就是`"hmh"`和`hmh`之间的区别。一个是常量，一个是变量，`"hmh"`不能被赋值，而`hmh`可以被赋值。
 
 #### 字符串的操作
 
@@ -159,9 +159,9 @@ a = b = c = 1 # 以后a,b,c都将表示1
 - 分割：
 
   ```python
-  >>> dox = "abc def ghi jkl"
-  >>> dox_list = dox.split() # 默认按空格分隔
-  >>> print(dox_list)
+  >>> hmh = "abc def ghi jkl"
+  >>> hmh_list = hmh.split() # 默认按空格分隔
+  >>> print(hmh_list)
   ```
 
   ```python
@@ -171,14 +171,14 @@ a = b = c = 1 # 以后a,b,c都将表示1
 - 合并：
 
   ```python
-  >>> dox = "dox"
-  >>> paradox = "paradox"
-  >>> friends = dox + " and " + paradox
+  >>> hmh = "hmh"
+  >>> villanelle = "villanelle"
+  >>> friends = hmh + " and " + villanelle
   >>> print(friends)
   ```
 
   ```
-  dox and paradox
+  hmh and villanelle
   ```
 
 一个字符串的结构其实类似于一个列表结构，所有列表可以进行的操作，在字符串上基本上都可以进行。
@@ -188,36 +188,36 @@ a = b = c = 1 # 以后a,b,c都将表示1
 列表是一种数据结构，就像表格的某一列，我们告诉别人某个数据在表格的这一列的那个位置，通常都会告诉他，在这一列的第几行。列表也是一个道理。在python中列表的每一个位置的数据类型可以是任意数据类型，可以是整型，浮点型，字符串甚至是列表。我们看下面一个例子：
 
 ```python
-dox_list = ['paradox', 1, 1.2222, ['dox', 2]]
+hmh_list = ['villanelle', 1, 1.2222, ['hmh', 2]]
 ```
 
 怎么访问列表中的数据呢？就像表格一样我们告诉程序我们访问的数据在那个位置：
 
 ```python
->>> dox_list[0]
-paradox
->>> dox_list[1]
+>>> hmh_list[0]
+villanelle
+>>> hmh_list[1]
 1
 ```
 
 记住，在任何编程语言中，索引的第一个数字都是$0$。
 
-你会发现`dox_list[2]`同样是一个列表啊，要怎么访问这个列表中的元素呢？看下面的操作：
+你会发现`hmh_list[2]`同样是一个列表啊，要怎么访问这个列表中的元素呢？看下面的操作：
 
 ```python
->>> dox_list[2]
-['dox', 2]
->>> dox_list[2][0]
-dox
->>> dox_list[2][1]
+>>> hmh_list[2]
+['hmh', 2]
+>>> hmh_list[2][0]
+hmh
+>>> hmh_list[2][1]
 2
 ```
 
-那我们怎么修改列表中的元素呢，比如我要把`dox_list[0]`变成`jinze`。我们执行以下操作：
+那我们怎么修改列表中的元素呢，比如我要把`hmh_list[0]`变成`jinze`。我们执行以下操作：
 
 ```python
->>> dox_list[0] = 'jinze'
->>> dox_list[0]
+>>> hmh_list[0] = 'jinze'
+>>> hmh_list[0]
 jinze
 ```
 
@@ -228,7 +228,7 @@ jinze
 元组的表示形式如下：
 
 ```python
-dox_tuple = ('paradox', 1, 2, 2.33333, ['dox', 1111], ('ppppp', 12312), 2222)
+hmh_tuple = ('villanelle', 1, 2, 2.33333, ['hmh', 1111], ('ppppp', 12312), 2222)
 ```
 
 ### 字典
@@ -236,25 +236,25 @@ dox_tuple = ('paradox', 1, 2, 2.33333, ['dox', 1111], ('ppppp', 12312), 2222)
 我们想象一下，平时我们查字典的时候，是不是每个单词下面都有自己对应的解释？在程序中我们称前面的单词为：key，称其中的解释为：value。我们来看一个例子：
 
 ```python
-dox_dic = {'jinze' : 'paradox', 'zhouyuxiang' : 'dox'}
+hmh_dic = {'jinze' : 'villanelle', 'huminghui' : 'hmh'}
 ```
 
 再比如：
 
 ```python
-phone_book = {'jinze' : 156****9980, 'dox' : 158*********}
+phone_book = {'jinze' : 156****9980, 'hmh' : 158*********}
 ```
 
 怎么访问呢？
 
 ```python
->>> dox_dic['jinze']
-paradox
->>> dox_dic['zhouyuxiang']
-dox
+>>> hmh_dic['jinze']
+villanelle
+>>> hmh_dic['huminghui']
+hmh
 ```
 
-这样我们的索引，和索引表示的内容都能有了特殊的意义，当然这还不是它主要的作用，他是一个集合类型，也就是说，元素之间会有互异性，只能有一个`jinze`也只能有一个`zhouyuxinag`，你会在以后的运用中，感受到字典的强大。
+这样我们的索引，和索引表示的内容都能有了特殊的意义，当然这还不是它主要的作用，他是一个集合类型，也就是说，元素之间会有互异性，只能有一个`jinze`也只能有一个`huminghui`，你会在以后的运用中，感受到字典的强大。
 
 ## 运算符
 
@@ -277,8 +277,8 @@ dox
 
 | 运算符 | 描述                             | 实例                              |
 | ------ | -------------------------------- | --------------------------------- |
-| `==`   | 判等符：比较两个对象是不是相等的 | `'paradox' == 'dox'`，返回`False` |
-| `!=`   | 比较两个对象是不是不相等         | `'paradox' != 'dox'`，返回`True`  |
+| `==`   | 判等符：比较两个对象是不是相等的 | `'villanelle' == 'hmh'`，返回`False` |
+| `!=`   | 比较两个对象是不是不相等         | `'villanelle' != 'hmh'`，返回`True`  |
 | `>`    | 大于                             | `2 > 1`，返回`True`               |
 | `<`    | 小于                             | `1 < 0`，返回`False`              |
 | `<=`   | 小于等于                         | `2 <= 2`， 返回`True`             |
@@ -360,8 +360,8 @@ print(n)
 ```
 
 ```python
->>> dox
-dox
+>>> hmh
+hmh
 ```
 
 ---
@@ -382,18 +382,18 @@ print(in)
 
 关于输出我们只要调用一下`print()`方法就可以了，参入的参数就是我们要输出的内容。
 
-那我们要怎么格式化输出我们的东西的呢？比如我们先输入一个数字3并保存在n这个变量中，我们要输出的内容是：dox比paradox大n个月。我们可以用下面的输出方式:
+那我们要怎么格式化输出我们的东西的呢？比如我们先输入一个数字3并保存在n这个变量中，我们要输出的内容是：hmh比villanelle大n个月。我们可以用下面的输出方式:
 
 ```python
 n = int(input())
-print("dox比paradox大%d个月" % n)
-print("dox比paradox大" + str(n) + "个月")
+print("hmh比villanelle大%d个月" % n)
+print("hmh比villanelle大" + str(n) + "个月")
 ```
 
 这里有三个小问题留给你：
 
 - 为什么我要使用`int(input())`而不是`input()`？
-- `%d`是什么意思？为什么不会输出"dox比paradox大%d个月"，而是输出了"dox比paradox大3个月"？
+- `%d`是什么意思？为什么不会输出"hmh比villanelle大%d个月"，而是输出了"hmh比villanelle大3个月"？
 - 为什么第二种输出方式`n`要用`str(n)`的形式？
 
 请通过微信或者微信语音聊天的方式告诉我你的答案或者疑问。
@@ -539,29 +539,29 @@ while i != 11:
 **Hint**：`print`函数输出时是默认会换行的比如：
 
 ```python
-print("dox")
-print("paradox")
+print("hmh")
+print("villanelle")
 ```
 
 输出为：
 
 ```python
-dox
-paradox
+hmh
+villanelle
 ```
 
 那要怎么使它不换行呢？就用如下方式：
 
 ```python
-print("dox", end="")
-print("paradox", end="")
+print("hmh", end="")
+print("villanelle", end="")
 print("dxxx")
 ```
 
 输出为：
 
 ```python
-doxparadox
+hmhvillanelle
 ```
 
 这里面`end`是给`print`这个方法传的另一个参数，表示以什么作为结尾。
@@ -637,7 +637,7 @@ for i in range(0, 101):
 `pass`不想讲了，和`continue`类似，所用在写完一个函数的定义或者循环体之后，内容没写，可以用这个填充
 
 ```python
-def dox: # 定义一个函数
+def hmh: # 定义一个函数
     pass # 啥都没干 先pass一下，可以过编译
 ```
 #### 小练习
@@ -649,13 +649,13 @@ def dox: # 定义一个函数
 我们知道列表的结构:
 
 ```python
-dox_list = ["A", "B", 111, 222, 1.11, "Dox", [1111, 2222], (1,2)]
+hmh_list = ["A", "B", 111, 222, 1.11, "hmh", [1111, 2222], (1,2)]
 ```
 
 我们现在有一个空的列表：
 
 ```python
-dox_list = []
+hmh_list = []
 ```
 
 ### 加入元素
@@ -665,8 +665,8 @@ dox_list = []
 ```python
 for i in range(0, 11):
     if i % 2 == 0:
-        dox_list.append(i)
-print(dox_list)
+        hmh_list.append(i)
+print(hmh_list)
 ```
 
 ```python
@@ -678,8 +678,8 @@ print(dox_list)
 我们想把第二个偶数换成3：
 
 ```python
-dox_list[1] = 3
-print(dox_list)
+hmh_list[1] = 3
+print(hmh_list)
 ```
 
 ```python
@@ -691,8 +691,8 @@ print(dox_list)
 我们把3这个不是偶数的数删去
 
 ```python
-del(dox_list[2])
-print(dox_list)
+del(hmh_list[2])
+print(hmh_list)
 ```
 
 ```python
@@ -704,14 +704,14 @@ print(dox_list)
 我们现在有一个纯数字的列表：
 
 ```python
-dox_list = [2, 3, 1, 4, 24, 5, 56]
+hmh_list = [2, 3, 1, 4, 24, 5, 56]
 ```
 
 然后我们对其升序排序：
 
 ```python
-dox_list.sort()
-pritn(dox_list)
+hmh_list.sort()
+pritn(hmh_list)
 ```
 
 就可以得到：
@@ -725,8 +725,8 @@ pritn(dox_list)
 如果我们这样：
 
 ```python
-dox_list.sort(reverse=True)
-print(dox_list)
+hmh_list.sort(reverse=True)
+print(hmh_list)
 ```
 
 就会得到：
@@ -1108,7 +1108,7 @@ plt.show()
 
 就可以得到：
 
-![1532692392570](https://github.com/paradoxtown/paradoxtown.github.io/blob/master/img/1532692392570.png?raw=true)
+![1532692392570](https://github.com/villanelletown/villanelletown.github.io/blob/master/img/1532692392570.png?raw=true)
 
 `from matplotlib import pyplot as plt`的意思就是从`matplotlib`这个模块中调用`pyplot`并将其简称为`plt`。怎么样看到这段短短的代码画出了四幅图是不是开始觉得python酷炫了起来。
 
@@ -1184,7 +1184,7 @@ file = open("./test.txt", "w")
 如果该路径没有该文件，那么程序就会自动在那个位置创建一个文件。`"w"`就是`write`的缩写，意思就是我们要对这个文件进行写的操作。
 
 ```python
-file.write("hello dox.\n")
+file.write("hello hmh.\n")
 file.write("nice to meet you!\n")
 file.close()
 ```
@@ -1281,7 +1281,7 @@ os.removedirs("./dir")
 
 ### `Excel`操作
 
-[资料](https://github.com/paradoxtown/documents/blob/master/%E3%80%8A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E3%80%8B%E7%AC%AC9%E6%AC%A1%E8%AF%BE%E4%BB%B6_0507.pdf)
+[资料](https://github.com/villanelletown/documents/blob/master/%E3%80%8A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E3%80%8B%E7%AC%AC9%E6%AC%A1%E8%AF%BE%E4%BB%B6_0507.pdf)
 
 # Project 6
 
