@@ -80,8 +80,8 @@ total = item_one + item_two + item_three
 整改后：
 ```python
 total = item_one + \
-		item_two + \
-		item_three
+	item_two + \
+item_three
 ```
 
 ## 引号
