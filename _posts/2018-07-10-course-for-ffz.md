@@ -159,7 +159,7 @@ a = b = c = 1 # 以后a,b,c都将表示1
   ```python
   >>> hmh = "abc def ghi jkl"
   >>> list1 = hmh.split() # 默认按空格分隔
-  >>> print(hmh_list1)
+  >>> print(list1)
   ```
 
   ```python
